@@ -1,0 +1,25 @@
+1. AlertContext.js
+ - 숫자알림을 뜨게 하기 위한 상태변수와 상태변수 함수를 선언한다.
+
+2. App.js
+ - 상단에 import{AlterProvider, AlterContext}를 import 한다.
+
+3. AppContent()함수에
+ - const {질문 상태변수1, goods 상태변수2} = React.useContext(Alertcontext); 값을 추가설정한다.
+
+4. App.js
+ - nav ul li 태그안에 <Link to = '/goods/'>안에 내용 작성하기
+ Goods{
+   goodsCount > 0 && (값이 참이면 실행) => 조건부 렌더링 공식 
+}
+
+아래처럼 작성하여 서식을 적용하면 된다
+ Goods{goodsCount>0&&(<span>{goodsCount}</span>)}
+
+5. goods.js
+/1. 첫줄에 useContext추가
+/2.  전역변수를 사용하기 위해 AlertContext 불러오기
+import {AlertContext} from  '../AlertContext';
+
+/3. 상태변수 추가
+const {setGoodsCount} = useContext(AlertContext);
