@@ -37,7 +37,7 @@ function Fruits(props) {
     //react 비동기 통신
     axios
       //db에서 json데이터를 불러온다.
-      .get('http://localhost:9070/fruits')
+      .get('https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/fruits')
       //성공시 데이터를 변수에 저장
       .then(res =>{ setData(res.data);
                     setFruitsCount(res.data.length);
