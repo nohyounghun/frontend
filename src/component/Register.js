@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Register(props) {
+  
+  const navigate = useNavigate();
   //1.변수선언
   const [form, setForm] = useState({
     username: '',
