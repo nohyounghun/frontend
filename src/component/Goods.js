@@ -14,7 +14,7 @@ function Goods(props) {
 
   const loadData = () => {
     axios
-      .get('http://backend/goods')
+      .get('backend/goods')
       .then(res =>{
         setData(res.data);
         setGoodsCount(res.data.length);
