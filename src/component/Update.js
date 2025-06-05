@@ -37,7 +37,7 @@ export default function Update() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:9070/goods/${g_code}`)
+    axios.get(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/goods/${g_code}`)
       .then(res => {
         console.log("서버 응답값:", res.data);
         setForm(res.data);
