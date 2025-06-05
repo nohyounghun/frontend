@@ -50,7 +50,7 @@ export default function BooksUpdate() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:9070/books/${num}`)
+    axios.get(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/books/${num}`)
       .then(res => {
         console.log("서버 응답값", res.data);
         setForm(res.data);
