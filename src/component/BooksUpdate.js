@@ -67,7 +67,7 @@ export default function BooksUpdate() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:9070/books/booksupdate/${num}`, {
+    axios.put(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/books/booksupdate/${num}`, {
       name: form.name,
       area1: form.area1,
       area2: form.area2,
