@@ -54,7 +54,7 @@ function Fruits(props) {
   /* 삭제 */
   const deleteData = (num) => {
     if (window.confirm('정말 삭제하시겠습니까?')) {
-      axios.delete(`http://localhost:9070/fruits/${num}`)
+      axios.delete(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/fruits/${num}`)
         .then(() => {
           alert('삭제되었습니다.');
           loadData();
