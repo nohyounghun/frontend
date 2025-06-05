@@ -28,7 +28,7 @@ function Goods(props) {
 
   const deleteData = (g_code) => {
     if (window.confirm('정말 삭제하시겠습니까?')) {
-      axios.delete(`http://localhost:9070/goods/${g_code}`)
+      axios.delete(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/goods/${g_code}`)
         .then(() => {
           alert('삭제되었습니다.');
           loadData();
