@@ -21,7 +21,7 @@ const Question= () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try { //데이터 전송 성공 시
-      await axios.post('http://localhost:9070/question', formData);
+      await axios.post('https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/question', formData);
       alert('질문이 등록되었습니다.');
 
       // 데이터 전송 후 입력창 초기화
