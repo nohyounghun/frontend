@@ -40,7 +40,7 @@ function Books(props) {
 
   const deleteData = (b_code) => {
     if (window.confirm('정말 삭제하시겠습니까?')){
-      axios.delete(`http://localhost:9070/books/${b_code}`)
+      axios.delete(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/books/${b_code}`)
       .then(()=>{
         alert('삭제되었습니다.');
         loadData();
