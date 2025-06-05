@@ -55,7 +55,7 @@ export default function Update() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.put(`http://localhost:9070/goods/update/${g_code}`, {
+    axios.put(`https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/goods/update/${g_code}`, {
       g_name: form.g_name,
       g_cost: form.g_cost
     })
