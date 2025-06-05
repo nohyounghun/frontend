@@ -26,7 +26,7 @@ function Books(props) {
   const pageNumbers = Array.from({ length: lastPage - startPage + 1 }, (_, i) => startPage + i); // 페이지 번호 배열
 
   const loadData = () => {
-    axios.get('http://localhost:9070/books')
+    axios.get('https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/books')
     .then(res=>{
       setData(res.data);
       setBooksCount(res.data.length);  // AlertContext에 있는 booksCount를 업데이트
