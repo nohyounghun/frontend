@@ -28,7 +28,7 @@ function Register(props) {
       return; //함수 종료
     }
     try{ //db서버와 통신이 잘되면 post방식으로 id, pw를 넘긴다.
-      const res = await axios.post('http://localhost:9070/register',{
+      const res = await axios.post('https://port-0-backend-mbeepqzxd38cc578.sel4.cloudtype.app/register',{
         username : form.username,
         password : form.password
       });
