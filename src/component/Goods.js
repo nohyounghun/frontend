@@ -14,7 +14,7 @@ function Goods(props) {
 
   const loadData = () => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/goods`)
+      .get(backend/goods);
       .then(res =>{
         setData(res.data);
         setGoodsCount(res.data.length);
