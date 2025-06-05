@@ -125,7 +125,7 @@ function Fruits(props) {
               <td>{item.color}</td>
               <td>{item.country}</td>
               <td>
-                <button>수정</button>&nbsp;
+                <button onClick={() => navigate(`/fruits/fruitsupdate/${data.num}`)}>수정</button>&nbsp;
                 <button onClick={() => { deleteData(item.num) }}>삭제</button>
               </td>
             </tr>
