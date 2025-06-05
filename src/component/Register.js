@@ -40,7 +40,7 @@ function Register(props) {
         setSuccess('회원가입이 완료되었습니다!');
         setError('');
         setForm({ username: '', password: '', confirmPassword: '' });
-        navigate('/');
+        navigate('/login');
       }
     }catch(err){ //실패시 아래 에러 출력
       if (err.response && err.response.data && err.response.data.error) {
