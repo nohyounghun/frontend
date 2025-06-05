@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
+const navigate = useNavigate();
 const Login = () => {
   //1. 상태변수 선언
   const [form, setForm] = useState({
@@ -26,6 +27,7 @@ const Login = () => {
       //사용자 인증이 끝나면 '토큰'을 발급한다.
       localStorage.setItem('token', res.data.token); //토큰을 로컬스토리지에 저장
       alert('로그인 성공');
+      navigate('/');
     }catch(err){//실패시 실행내용
       setError('로그인 실패 : 아이디와 패스워드가 일치하지 않습니다.');
     }
